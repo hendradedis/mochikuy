@@ -9,6 +9,7 @@
   "dependencies": {
     "apollo-client": "^2.3.7",
     "axios": "^0.18.0",
+    "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
     "lodash": "^4.17.10",
     "qs": "^6.5.2",
