@@ -2,8 +2,8 @@ import react, {Component} from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { TabNavigator, StackNavigator } from 'react-navigation'
 import { Provider } from 'react-redux'
-import ApolloClient, { createNetworkInterface } from 'apollo-client'
-import { ApolloProvider } from 'react-apollo'
+import ApolloClient from 'apollo-client'
+import { ApolloClient, createNetworkInterface, ApolloProvider } from 'react-apollo'
 
 import store from './store'
 
