@@ -26,7 +26,7 @@ class DummyFormScreen extends Component {
 
   onNext = () => {
     console.log('[DummyFormScreen] onNext');
-    this.props.navigation.navigate('dummyDetail');
+    this.props.navigation.navigate('test');
   }
 
 }

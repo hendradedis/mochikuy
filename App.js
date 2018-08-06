@@ -10,10 +10,9 @@ import store from './store'
 import TestScreen from './screens/TestScreen'
 import Test2Screen from './screens/Test2Screen'
 import Test3Screen from './screens/Test3Screen'
+import DummyDetailScreen from './screens/dummy/DummyDetailScreen'
+import DummyListScreen from './screens/dummy/DummyListScreen'
 import DummyFormScreen from './screens/dummy/DummyFormScreen'
-import DummyFormScreen from './screens/dummy/DummyFormScreen'
-import DummyFormScreen from './screens/dummy/DummyFormScreen'
-
 
 const networkInterface = createNetworkInterface ({
   uri : 'https://wfm.supersabar.com/api/graphql' 
@@ -53,8 +52,8 @@ export default class App extends Component {
         },
         dummyFlow : {
           screen : StackNavigator({
-            dummyList : {screen : DummyFormScreen},
-            dummyDetail : {screen : DummyFormScreen},
+            dummyList : {screen : DummyListScreen},
+            dummyDetail : {screen : DummyDetailScreen},
             dummyForm : {screen : DummyFormScreen}
           })
         },

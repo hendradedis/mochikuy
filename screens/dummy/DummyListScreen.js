@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
 
-class DummyFormScreen extends Component {
+class DummyDetailScreen extends Component {
 
   static navigationOptions = {
-    title: "DummyFormScreen"
+    title: "DummyDetailScreen"
   }
 
   render() {
-    console.log("[DummyFormScreen] render");
+    console.log("[DummyDetailScreen] render");
 
     return (
       <View style={styles.container}>
-        <Text>DummyFormScreen </Text>
+        <Text>DummyDetailScreen </Text>
         <Button
           style={{ marginTop: 16 }}
           backgroundColor="#009688"
@@ -25,8 +25,8 @@ class DummyFormScreen extends Component {
   }
 
   onNext = () => {
-    console.log('[DummyFormScreen] onNext');
-    this.props.navigation.navigate('dummyDetail');
+    console.log('[DummyDetailScreen] onNext');
+    this.props.navigation.navigate('dummyForm');
   }
 
 }
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DummyFormScreen;
+export default DummyDetailScreen;
